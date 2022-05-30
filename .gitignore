@@ -1,3 +1,4 @@
 .idea
-src/output
+src/output/**
+!src/output/.gitkeep
 src/pr_3

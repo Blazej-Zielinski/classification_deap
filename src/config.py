@@ -19,14 +19,14 @@ class Classifier(Enum):
     DECISION_TREE = 'DECISION_TREE'
 
 
-with_selection = True
+with_selection = False
 
 config = {
-    'classifier': Classifier.RANDOM_FOREST,
+    'classifier': Classifier.SVC,
     'select': Selection.BEST,
 
-    'size_population': 10,
-    'select_size': 10,
+    'size_population': 5,
+    'select_size': 5,
     'tournament_size': 1,
     'probability_mutate': 1,
 
